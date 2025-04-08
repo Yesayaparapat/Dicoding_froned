@@ -124,7 +124,7 @@ const editBook = (bookId) => {
   if (book) {
     document.getElementById("inputBookTitle").value = book.title;
     document.getElementById("inputBookAuthor").value = book.author;
-    document.getElementById("inputBookYear").value = book.year;
+    document.getElementById("inputBookYear").value = parseInt(book.year);
     document.getElementById("inputBookIsComplete").checked = book.isComplete;
 
     document.getElementById("bookSubmit").innerText = "Edit Buku";
